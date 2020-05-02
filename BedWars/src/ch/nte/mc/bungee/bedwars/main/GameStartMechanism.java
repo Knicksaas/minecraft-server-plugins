@@ -38,6 +38,7 @@ public class GameStartMechanism implements Listener {
 			p.getInventory().clear();
 			p.teleport(MainVariables.playerTeamMap.get(p).getSpawn());
 		}
+		clearInvs();
 		ScoreBoardManager.updateScoreBoard();
 		BorderWorld.createBorder();
 		Spawner.startSpawner();
@@ -80,6 +81,12 @@ public class GameStartMechanism implements Listener {
 			return  new PacketPlayOutTitle(EnumTitleAction.TITLE, ChatSerializer.a("{\"text\":\"5\",\"bold\":true,\"color\":\"dark_purple\"}"), 0, 10, 10);
 		}
 		return null;
+	}
+	
+	private static void clearInvs() {
+		for(Player p: Bukkit.getOnlinePlayers()) {
+			p.getInventory().clear();
+		}
 	}
 	
 }

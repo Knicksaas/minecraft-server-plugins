@@ -1,0 +1,5 @@
+package ch.nte.mc.bungee.bedwars.world;
+
+public class HungerDisabler {
+
+}

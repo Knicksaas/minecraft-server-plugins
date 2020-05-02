@@ -28,6 +28,7 @@ public class Messages {
 	
 	public static final String ownBedMsg = prefix + "you can't destroy your own bed! You stupid human!";
 	public static final String destroydBed = " destroyed the bed of team ";
+	public static final String uCantSleep =  prefix + "You should win the game and not sleep in a bed!";
 	
 	public static final String commingSoon = "comming soon!";
 }

@@ -128,7 +128,7 @@ public class Recipes {
 		enchantments.add(new Enchantments(Enchantment.DAMAGE_ALL, 2));
 		enchantments.add(new Enchantments(Enchantment.KNOCKBACK, 1));
 		MerchantOffer sword3 = new MerchantOffer(new ItemStack(Material.GOLD_INGOT, 5),
-				getItemForOffer(Material.GOLD_SWORD, 1, (byte) 0, enchantments, "§cSchwiizer Armee Sackmässer Lv.2", null));
+				getItemForOffer(Material.IRON_SWORD, 1, (byte) 0, enchantments, "§cSchwiizer Armee Sackmässer Lv.2", null));
 		enchantments.clear();
 		
 		villager.addOffer(stick);
@@ -170,7 +170,7 @@ public class Recipes {
 		MerchantOffer apple = new MerchantOffer(new ItemStack(Material.CLAY_BRICK),
 				getItemForOffer(Material.APPLE, 1, (byte) 0, "Elektroschrott", null));
 		MerchantOffer steak = new MerchantOffer(new ItemStack(Material.CLAY_BRICK, 2),
-				getItemForOffer(Material.PORK, 1, (byte) 0, "4Islam", null));
+				getItemForOffer(Material.COOKED_BEEF, 1, (byte) 0, "4Islam", null));
 		MerchantOffer cake = new MerchantOffer(new ItemStack(Material.IRON_INGOT),
 				getItemForOffer(Material.CAKE, 1, (byte) 0, "LEEEGGER", null));
 		MerchantOffer gap = new MerchantOffer(new ItemStack(Material.GOLD_INGOT, 2),

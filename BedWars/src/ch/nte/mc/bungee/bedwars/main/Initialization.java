@@ -11,8 +11,10 @@ import ch.nte.mc.bungee.bedwars.teams.TeamChooser;
 import ch.nte.mc.bungee.bedwars.variables.ConfigCopy;
 import ch.nte.mc.bungee.bedwars.variables.MainVariables;
 import ch.nte.mc.bungee.bedwars.villager.Villager;
+import ch.nte.mc.bungee.bedwars.villager.VillagerProtector;
 import ch.nte.mc.bungee.bedwars.world.BedListener;
 import ch.nte.mc.bungee.bedwars.world.BuildDisabler;
+import ch.nte.mc.bungee.bedwars.world.LobbyProtector;
 import ch.nte.mc.bungee.bedwars.world.SpawnManager;
 import ch.nte.mc.bungee.bedwars.world.WeatherManager;
 
@@ -37,6 +39,8 @@ public class Initialization {
 		Bukkit.getServer().getPluginManager().registerEvents(new ScoreBoardManager(), MainVariables.plugin);
 		Bukkit.getServer().getPluginManager().registerEvents(new BedListener(), MainVariables.plugin);
 		Bukkit.getServer().getPluginManager().registerEvents(new Villager(), MainVariables.plugin);
+		Bukkit.getServer().getPluginManager().registerEvents(new VillagerProtector(), MainVariables.plugin);
+		Bukkit.getServer().getPluginManager().registerEvents(new LobbyProtector(), MainVariables.plugin);
 	}
 	
 	private static void variablesInit() {

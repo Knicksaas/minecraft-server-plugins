@@ -1,0 +1,17 @@
+package ch.nte.mc.bungee.bedwars.world;
+
+import org.bukkit.event.EventHandler;
+import org.bukkit.event.Listener;
+import org.bukkit.event.entity.FoodLevelChangeEvent;
+
+import ch.nte.mc.bungee.bedwars.variables.MainVariables;
+
+public class HungerDisabler implements Listener {
+
+	@EventHandler
+	public void onHunger(FoodLevelChangeEvent e) {
+		if(!MainVariables.isGameRunning) {
+			e.setCancelled(true);
+		}
+	}
+}

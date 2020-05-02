@@ -12,6 +12,7 @@ import org.bukkit.block.BlockState;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.block.BlockBreakEvent;
+import org.bukkit.event.player.PlayerBedEnterEvent;
 import org.bukkit.material.Bed;
 
 import ch.nte.mc.bungee.bedwars.cosmetics.ScoreBoardManager;
@@ -24,6 +25,12 @@ import ch.nte.mc.bungee.bedwars.variables.Messages;
 public class BedListener implements Listener {
 	
 	private static List<BedLocation> bedlist = new ArrayList<>();
+	
+	@EventHandler
+	public void onSleep(PlayerBedEnterEvent e) {
+		e.setCancelled(true);
+		e.getPlayer().sendMessage(Messages.uCantSleep);
+	}
 
 	@EventHandler
 	public void onBedDistroy(BlockBreakEvent e) {
