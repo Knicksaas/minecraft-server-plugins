@@ -1,0 +1,33 @@
+#############################################
+#											#
+#	Config file of the MLGrush plugin		#
+#											#
+#############################################
+LobbyCoords:
+  x: 0
+  y: 0
+  z: 0
+Spawn:
+  pointRed:
+    x: 0.0
+    y: 0.0
+    z: 0.0
+  pointBlue:
+    x: 0.0
+    y: 0.0
+    z: 0.0
+Bed:
+  bedRed:
+    x: 0.0
+    y: 0.0
+    z: 0.0
+  bedBlue:
+    x: 0.0
+    y: 0.0
+    z: 0.0
+General:
+  tpHeight: 50
+  middle:
+    x: 0
+    z: 0
+  borderSize: 50

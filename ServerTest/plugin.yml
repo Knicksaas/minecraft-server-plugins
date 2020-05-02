@@ -1,0 +1,7 @@
+name: TestPlugin
+version: 1.0
+main: ch.nte.mc.bungee.test.BedPlaceTest
+author: Nickitiki
+
+commands:
+  place:

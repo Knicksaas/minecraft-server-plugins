@@ -1,0 +1,14 @@
+name: MLGrush
+version: 1.0
+author: Nickitiki
+main: ch.nte.mc.bungee.mlgrush.main.Main
+commands:
+  login:
+    description: Adds player to the administrator list.
+    permissions: mlgrush.login
+  logout:
+    description: Removes player from the administrator list.
+    permissions: mlgrush.logout
+  adminlist:
+    description: Displays players which are logged in as admins.
+    permissions: mlgrush.adminlist

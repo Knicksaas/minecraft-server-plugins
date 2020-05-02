@@ -1,0 +1,24 @@
+INDEX VERSION 1.131+E:\Nickitiki\Java Projekte\Minecraft\bungee network\Eclipse Workspace\.metadata\.plugins\org.eclipse.jdt.core
+1223396850.index
+607522861.index
+306780836.index
+503605182.index
+3189462843.index
+636016986.index
+2125071999.index
+3244853415.index
+1440056492.index
+1178675966.index
+4213348864.index
+2978330599.index
+2492604015.index
+582872082.index
+1220308574.index
+2762649813.index
+2668948516.index
+1266597674.index
+71918308.index
+648506100.index
+2538215463.index
+4054038625.index
+362242403.index

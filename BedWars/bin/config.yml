@@ -1,0 +1,39 @@
+#############################################
+#											#
+#	Config file of the BedWars plugin		#
+#											#
+#############################################
+General:
+  TeamSize: 2
+  TeamAmount: 2 # Max: 4, Min: 2
+  Radius: 300
+Spawns:
+  Lobby:
+    x: 0
+    y: 0
+    z: 0
+    yaw: 0
+  Middle:
+    x: 0
+    y: 0
+    z: 0
+  SpawnTeam1:
+    x: 0
+    y: 0
+    z: 0
+    yaw: 0
+  SpawnTeam2:
+    x: 0
+    y: 0
+    z: 0
+    yaw: 0
+  SpawnTeam3:
+    x: 0
+    y: 0
+    z: 0
+    yaw: 0
+  SpawnTeam4:
+    x: 0
+    y: 0
+    z: 0
+    yaw: 0

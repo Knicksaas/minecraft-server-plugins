@@ -1,0 +1,34 @@
+1584961587421	Encapsulate field 'x'
+1584961592634	Encapsulate field 'y'
+1584961596238	Encapsulate field 'z'
+1584961658974	Encapsulate field 'material'
+1584962966740	Move compilation unit
+1584962971369	Move compilation unit
+1584963042431	Move compilation unit
+1584966751925	Rename package 'ch.nte.mc.bungee.bedwars.build'
+1584966760306	Move compilation unit
+1584979578004	Rename compilation unit 'WorldBorder.java'
+1584982348775	Move file
+1584982350541	Move file
+1584982795785	Move file
+1584982797908	Move file
+1585057297396	Move compilation unit
+1585057309955	Move compilation unit
+1585057330209	Move compilation unit
+1585058387321	Encapsulate field 'bed'
+1585235005797	Rename package 'ch.nte.mc.bungee.bedwars.design'
+1585242120974	Encapsulate field 'headX'
+1585242129338	Encapsulate field 'headY'
+1585242132662	Encapsulate field 'headZ'
+1585242135777	Encapsulate field 'bodyX'
+1585242139477	Encapsulate field 'bodyY'
+1585242143525	Encapsulate field 'bodyZ'
+1585242780257	Rename type 'Bed'
+1585242810246	Encapsulate field 'bed'
+1585244289805	Encapsulate field 'head'
+1585244292402	Encapsulate field 'foot'
+1585246051362	Encapsulate field 'footLocation'
+1585246053603	Encapsulate field 'headLocation'
+1585327728100	Encapsulate field 'face'
+1585327754000	Rename type 'AdvancedBed'
+1585334090905	Rename compilation unit 'CMD_startspawner.java'

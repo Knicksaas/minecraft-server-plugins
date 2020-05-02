@@ -1,0 +1,26 @@
+name: BedWars
+version: 1.0
+author: Nickitiki
+main: ch.nte.mc.bungee.bedwars.main.Main
+commands:
+  start:
+    description: Forces the games to start.
+    permissions: start
+  login:
+    description: Logs player in to the adminlist.
+    permissions: login
+  logout:
+    description: Logs player out of the adminlist.
+    permissions: logout
+  adminlist:
+    description: Displays all players of the adminlist.
+    permissions: adminlist
+  replacebed: 
+    description: Replaces all beds.
+    permissions: replacebed
+  place:
+    description: Places a bed!
+    permissions: place
+  setspawner:
+    description: sets a spawnpoint to player location.
+    permissions: setspawner

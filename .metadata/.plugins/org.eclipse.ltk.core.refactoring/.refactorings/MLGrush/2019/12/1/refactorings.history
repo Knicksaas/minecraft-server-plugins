@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;ch.nte.mc.bungee.mlgrush.events.InventoryCloseEvent.java&apos; to &apos;InvCloseEvent.java&apos;&#x0D;&#x0A;- Original project: &apos;MLGrush&apos;&#x0D;&#x0A;- Original element: &apos;ch.nte.mc.bungee.mlgrush.events.InventoryCloseEvent.java&apos;&#x0D;&#x0A;- Renamed element: &apos;ch.nte.mc.bungee.mlgrush.events.InvCloseEvent.java&apos;" description="Rename compilation unit &apos;InventoryCloseEvent.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;ch.nte.mc.bungee.mlgrush.events{InventoryCloseEvent.java" name="InvCloseEvent.java" references="false" stamp="1577741947154" version="1.0"/>
+</session>
