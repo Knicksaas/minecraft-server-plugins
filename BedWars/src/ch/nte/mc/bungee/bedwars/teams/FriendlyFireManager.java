@@ -1,5 +1,6 @@
 package ch.nte.mc.bungee.bedwars.teams;
 
+import org.bukkit.entity.Arrow;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
@@ -17,6 +18,11 @@ public class FriendlyFireManager implements Listener {
 				if(MainVariables.playerTeamMap.get((Player) e.getEntity()).getID() == (MainVariables.playerTeamMap.get((Player)e.getDamager()).getID())){
 					e.setCancelled(true);
 				}
+			}
+		} else if (e.getDamager() instanceof Arrow) {
+			Arrow arrow = (Arrow) e.getEntity();
+			if(MainVariables.playerTeamMap.get((Player) e.getEntity()).getID() == (MainVariables.playerTeamMap.get((Player)arrow.getShooter()).getID())){
+				e.setCancelled(true);
 			}
 		}
 	}

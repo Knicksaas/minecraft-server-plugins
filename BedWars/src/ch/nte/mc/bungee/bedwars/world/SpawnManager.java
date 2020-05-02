@@ -1,10 +1,13 @@
 package ch.nte.mc.bungee.bedwars.world;
 
+import org.bukkit.GameMode;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.entity.PlayerDeathEvent;
 import org.bukkit.event.player.PlayerJoinEvent;
 
+import ch.nte.mc.bungee.bedwars.cosmetics.ScoreBoardManager;
+import ch.nte.mc.bungee.bedwars.main.GameStopMechanism;
 import ch.nte.mc.bungee.bedwars.teams.Spectator;
 import ch.nte.mc.bungee.bedwars.variables.ConfigCopy;
 import ch.nte.mc.bungee.bedwars.variables.MainVariables;
@@ -16,7 +19,15 @@ public class SpawnManager implements Listener {
 		if(MainVariables.isGameRunning) {
 			e.getEntity().spigot().respawn();
 			e.getDrops().clear();
-			e.getEntity().teleport(MainVariables.playerTeamMap.get(e.getEntity()).getSpawn());
+			if(MainVariables.playerTeamMap.get(e.getEntity()).hasBed()) {
+				e.getEntity().teleport(MainVariables.playerTeamMap.get(e.getEntity()).getSpawn());
+			} else {
+				e.getEntity().teleport(ConfigCopy.middle);
+				e.getEntity().setGameMode(GameMode.SPECTATOR);
+				MainVariables.playerTeamMap.remove(e.getEntity());
+				ScoreBoardManager.updateScoreBoard();
+				GameStopMechanism.checkIfIsGameEnd();
+			}
 		} else {
 			e.getEntity().spigot().respawn();
 			e.getDrops().clear();

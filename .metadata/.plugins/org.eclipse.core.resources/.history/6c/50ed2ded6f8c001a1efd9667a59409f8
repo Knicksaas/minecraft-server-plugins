@@ -1,0 +1,8 @@
+package ch.nte.mc.bungee.bedwars.main;
+
+import org.bukkit.event.Listener;
+
+public class GameStopMechanism {
+
+	public static void 
+}

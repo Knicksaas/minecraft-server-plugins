@@ -1,0 +1,42 @@
+package ch.nte.mc.bungee.bedwars.main;
+
+import org.bukkit.Bukkit;
+import org.bukkit.craftbukkit.v1_8_R3.entity.CraftPlayer;
+import org.bukkit.entity.Player;
+
+import ch.nte.mc.bungee.bedwars.objects.Team;
+import ch.nte.mc.bungee.bedwars.variables.ConfigCopy;
+import ch.nte.mc.bungee.bedwars.variables.MainVariables;
+import ch.nte.mc.bungee.bedwars.world.MapReseter;
+import net.minecraft.server.v1_8_R3.PacketPlayOutTitle;
+import net.minecraft.server.v1_8_R3.IChatBaseComponent.ChatSerializer;
+import net.minecraft.server.v1_8_R3.PacketPlayOutTitle.EnumTitleAction;
+
+public class GameStopMechanism {
+
+	public static void checkIfIsGameEnd() {
+		switch (ConfigCopy.getTeamAmount) {
+		case 2:
+			if(MainVariables.team1.getMemberAmount() < 1) {
+				
+			}
+			break;
+		case 3:
+			
+			break;
+		case 4:
+			
+			break;
+		}
+	}
+	
+	private static void gameEnd(Team winnerTeam) {
+		MapReseter.resetMap();
+		for(Player p: Bukkit.getServer().getOnlinePlayers()) {
+			p.teleport(ConfigCopy.lobby);
+			((CraftPlayer)p).getHandle().playerConnection.sendPacket(new PacketPlayOutTitle(EnumTitleAction.TITLE, 
+					ChatSerializer.a("{\"text\":\"1\",\"bold\":true,\"color\":\"" winnerTeam.getColor().name() "\"}"), 0, 10, 10););
+		}
+	}
+	
+}
