@@ -1,0 +1,11 @@
+#
+#   CONFIG FILE OF THE VARO PLUGIN
+#
+General:
+  TeamAmount: 2
+  BorderRadius: 1000
+  DailyOnlineTime: #in minutes
+Locations:
+  Spawn:
+    x: 0
+    z: 0
