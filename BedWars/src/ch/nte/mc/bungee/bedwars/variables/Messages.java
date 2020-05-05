@@ -5,6 +5,7 @@ import org.bukkit.ChatColor;
 public class Messages {
 	
 	public static final ChatColor textColor = ChatColor.GRAY;
+	public static final ChatColor contrastColor = ChatColor.YELLOW;
 	public static final String prefix = textColor + "[" + ChatColor.YELLOW + "BedWars" + textColor + "] ";
 
 	public static final String spaceBarBetweenName = textColor + " | ";
@@ -22,7 +23,7 @@ public class Messages {
 	
 	public static final String joinMessage = textColor + " joined the game!";
 	public static final String quitMessage = textColor + " left the game!";
-	public static final String reloadInTenSec = prefix + "Server will restart in 10 seconds";
+	public static final String reloadCounter = prefix + "Server will restart in " + contrastColor +" %TIME% " + textColor +"seconds";
 	
 	public static final String suicideMessage = textColor + " died!";
 	public static final String playerKilledByPlayerMsg = textColor + " was killed by ";
@@ -32,4 +33,5 @@ public class Messages {
 	public static final String uCantSleep =  prefix + "You should win the game and not sleep in a bed!";
 	
 	public static final String commingSoon = "comming soon!";
+	public static final String reloadMsg = ChatColor.RED + "The server is restarting... Dont waste yout time and choos a other game!";
 }

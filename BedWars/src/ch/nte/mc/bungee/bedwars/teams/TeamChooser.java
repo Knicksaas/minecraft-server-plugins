@@ -74,47 +74,50 @@ public class TeamChooser implements Listener {
 			return;
 		}
 		e.setCancelled(true);
-		switch (e.getItem().getItemMeta().getDisplayName()) {
-			case ItemNames.chooseRedTeam:
-				if(MainVariables.playerTeamMap.get(e.getPlayer()) != null) {
-					if(MainVariables.playerTeamMap.get(e.getPlayer()).getColor() == ChatColor.RED) {
-						e.getPlayer().sendMessage(Messages.alreadyInTeam);
-						break;
+		try {
+			switch (e.getItem().getItemMeta().getDisplayName()) {
+				case ItemNames.chooseRedTeam:
+					if(MainVariables.playerTeamMap.get(e.getPlayer()) != null) {
+						if(MainVariables.playerTeamMap.get(e.getPlayer()).getColor() == ChatColor.RED) {
+							e.getPlayer().sendMessage(Messages.alreadyInTeam);
+							break;
+						}
+						removeFromTeam(e.getPlayer());
 					}
-					removeFromTeam(e.getPlayer());
-				}
-				addToTeam(e.getPlayer(), 1);
-				break;
-			case ItemNames.chooseBlueTeam:
-				if(MainVariables.playerTeamMap.get(e.getPlayer()) != null) {
-					if(MainVariables.playerTeamMap.get(e.getPlayer()).getColor() == ChatColor.BLUE) {
-						e.getPlayer().sendMessage(Messages.alreadyInTeam);
-						break;
+					addToTeam(e.getPlayer(), 1);
+					break;
+				case ItemNames.chooseBlueTeam:
+					if(MainVariables.playerTeamMap.get(e.getPlayer()) != null) {
+						if(MainVariables.playerTeamMap.get(e.getPlayer()).getColor() == ChatColor.BLUE) {
+							e.getPlayer().sendMessage(Messages.alreadyInTeam);
+							break;
+						}
+						removeFromTeam(e.getPlayer());
 					}
-					removeFromTeam(e.getPlayer());
-				}
-				addToTeam(e.getPlayer(), 2);
-				break;
-			case ItemNames.chooseYellowTeam:
-				if(MainVariables.playerTeamMap.get(e.getPlayer()) != null) {
-					if(MainVariables.playerTeamMap.get(e.getPlayer()).getColor() == ChatColor.YELLOW) {
-						e.getPlayer().sendMessage(Messages.alreadyInTeam);
-						break;
+					addToTeam(e.getPlayer(), 2);
+					break;
+				case ItemNames.chooseYellowTeam:
+					if(MainVariables.playerTeamMap.get(e.getPlayer()) != null) {
+						if(MainVariables.playerTeamMap.get(e.getPlayer()).getColor() == ChatColor.YELLOW) {
+							e.getPlayer().sendMessage(Messages.alreadyInTeam);
+							break;
+						}
+						removeFromTeam(e.getPlayer());
 					}
-					removeFromTeam(e.getPlayer());
-				}
-				addToTeam(e.getPlayer(), 3);
-				break;
-			case ItemNames.chooseGreenTeam:
-				if(MainVariables.playerTeamMap.get(e.getPlayer()) != null) {
-					if(MainVariables.playerTeamMap.get(e.getPlayer()).getColor() == ChatColor.GREEN) {
-						e.getPlayer().sendMessage(Messages.alreadyInTeam);
-						break;
+					addToTeam(e.getPlayer(), 3);
+					break;
+				case ItemNames.chooseGreenTeam:
+					if(MainVariables.playerTeamMap.get(e.getPlayer()) != null) {
+						if(MainVariables.playerTeamMap.get(e.getPlayer()).getColor() == ChatColor.GREEN) {
+							e.getPlayer().sendMessage(Messages.alreadyInTeam);
+							break;
+						}
+						removeFromTeam(e.getPlayer());
 					}
-					removeFromTeam(e.getPlayer());
-				}
-				addToTeam(e.getPlayer(), 4);
-				break;
+					addToTeam(e.getPlayer(), 4);
+					break;
+			}
+		} catch (Exception e2) {
 		}
 		
 	}

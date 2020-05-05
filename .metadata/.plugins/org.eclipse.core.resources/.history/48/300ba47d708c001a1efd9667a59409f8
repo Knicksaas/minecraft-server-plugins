@@ -1,8 +1,0 @@
-package ch.nte.mc.bungee.bedwars.main;
-
-public class GameStopMechanism {
-
-	public static void stopGame() {
-		
-	}
-}

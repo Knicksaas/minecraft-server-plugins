@@ -1,9 +1,7 @@
 package ch.nte.mc.bungee.bedwars.cosmetics;
 
-import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
-import org.bukkit.event.entity.PlayerDeathEvent;
 import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.event.player.PlayerQuitEvent;
 
@@ -23,16 +21,5 @@ public class MessageManager implements Listener {
 			e.setQuitMessage(Messages.prefix + MainVariables.playerTeamMap.get(e.getPlayer()).getColor() + e.getPlayer().getName() + Messages.quitMessage);
 		}
 		e.setQuitMessage(Messages.prefix + e.getPlayer().getName() + Messages.quitMessage);
-	}
-	
-	@EventHandler
-	public void onDie(PlayerDeathEvent e) {
-        Player p = e.getEntity();
-        if(p.getKiller() instanceof Player) {
-            p.sendMessage(Messages.prefix + MainVariables.playerTeamMap.get(p).getColor() + e.getEntity().getName() + 
-            		Messages.playerKilledByPlayerMsg + MainVariables.playerTeamMap.get(p.getKiller()).getColor() + p.getKiller().getName());
-            return;
-        }
-		e.setDeathMessage(Messages.prefix + MainVariables.playerTeamMap.get(e.getEntity()).getColor() + e.getEntity().getName() + Messages.suicideMessage);
 	}
 }
